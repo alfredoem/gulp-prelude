@@ -1,0 +1,26 @@
+{
+  "name": "gulp-prelude",
+  "version": "0.0.1",
+  "description": "Gulp prelude",
+  "keywords": ["gulp", "example", "prelude", "npm"],
+  "author": "Alfredo EM <alfredo.espiritu.m@gmail.com>",
+  "contributors": [
+    {
+      "name": "Yitan Tribal",
+      "email": "yitan@square.com"
+    },
+    {
+      "name": "Cloud Strife",
+      "email": "cloud@square.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfredoem/gulp-prelude.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url" : "https://github.com/alfredoem/gulp-prelude/issues",
+    "email" : "alfredo.espiritu.m@gmail.com"
+  }
+}
