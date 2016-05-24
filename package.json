@@ -2,7 +2,12 @@
   "name": "gulp-prelude",
   "version": "0.0.1",
   "description": "Gulp prelude",
-  "keywords": ["gulp", "example", "prelude", "npm"],
+  "keywords": [
+    "gulp",
+    "example",
+    "prelude",
+    "npm"
+  ],
   "author": "Alfredo EM <alfredo.espiritu.m@gmail.com>",
   "contributors": [
     {
@@ -20,7 +25,11 @@
   },
   "license": "MIT",
   "bugs": {
-    "url" : "https://github.com/alfredoem/gulp-prelude/issues",
-    "email" : "alfredo.espiritu.m@gmail.com"
+    "url": "https://github.com/alfredoem/gulp-prelude/issues",
+    "email": "alfredo.espiritu.m@gmail.com"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.3"
   }
 }
