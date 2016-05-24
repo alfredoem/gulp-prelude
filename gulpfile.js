@@ -14,8 +14,7 @@ var buffer = require('vinyl-buffer');
 
 var bundleGames = function() {
 
-    return gulp
-        .src('resources/assets/js/games/index.js')
+    return gulp.src('resources/assets/js/games/index.js')
         //.pipe(rename('index.min.js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
@@ -37,10 +36,22 @@ var bundleUsers = function() {
 
 // Uglify
 gulp.task('games-js', function(){
-    return bundleUsers();
+    bundleGames();
 });
 
 // Browserify & Babel
 gulp.task('users-js', function(){
-    return bundleUsers();
+    bundleUsers();
 });
+
+// Watch
+gulp.task('watch', function(){
+    bundleGames();
+    bundleUsers();
+
+    return gulp.watch(
+        ['./resources/assets/js/**/*.js'],
+        ['games-js', 'users-js']
+    );
+
+})
