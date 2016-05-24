@@ -20,3 +20,7 @@ Gulp Prelude
 1.  Crear archivo `resources\assets\js\users\index.js` para transpilar
 
 #### # 06 gulp-rename
+
+#### # 07 Refactor Gulpfile
+
+#### # 08 Gulp Watch
