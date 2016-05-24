@@ -12,8 +12,7 @@ var buffer = require('vinyl-buffer');
 
 // Tasks
 
-// Uglify
-gulp.task('games-js', function(){
+var bundleGames = function() {
 
     return gulp
         .src('resources/assets/js/games/index.js')
@@ -22,11 +21,9 @@ gulp.task('games-js', function(){
         .pipe(uglify())
         .pipe(gulp.dest('public/js/games'));
 
-});
+}
 
-
-// Browserify & Babel
-gulp.task('users-js', function(){
+var bundleUsers = function() {
 
     return browserify('resources/assets/js/users/index.js')
         .transform('babelify', {presets: ['es2015']})
@@ -36,4 +33,14 @@ gulp.task('users-js', function(){
         .pipe(uglify())
         .pipe(gulp.dest('public/js/users'));
 
+}
+
+// Uglify
+gulp.task('games-js', function(){
+    return bundleUsers();
+});
+
+// Browserify & Babel
+gulp.task('users-js', function(){
+    return bundleUsers();
 });
