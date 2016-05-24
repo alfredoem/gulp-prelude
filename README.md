@@ -17,4 +17,6 @@ Gulp Prelude
 1.  Configurar tarea para transpilar ES6 to ES5
 
 #### # 05
-2.  Crear archivo `resources\assets\js\users\index.js` para transpilar
+1.  Crear archivo `resources\assets\js\users\index.js` para transpilar
+
+#### # 06 gulp-rename

@@ -2,7 +2,7 @@
 
 // Packages
 var gulp = require('gulp');
-var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var browserify = require('browserify');
 var babelify = require('babelify');
@@ -17,6 +17,8 @@ gulp.task('games-js', function(){
 
     return gulp
         .src('resources/assets/js/games/index.js')
+        //.pipe(rename('index.min.js'))
+        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('public/js/games'));
 
